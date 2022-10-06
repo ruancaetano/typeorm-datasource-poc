@@ -16,7 +16,6 @@ export class ListUserController {
 
       return res.status(200).send(responseBody);
     } catch (err) {
-      console.log(err);
       return res.status(500).json({
         message: "Internal Server Error",
       });
